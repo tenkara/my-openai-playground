@@ -2,7 +2,7 @@
 // Create a canvas element
 let canvas = document.createElement("canvas");
 document.body.appendChild(canvas);
-let ctx = canvas.getContext("2d");
+var ctx = canvas.getContext("2d");
 
 // Set the size of the canvas
 canvas.width = 500;
@@ -15,25 +15,22 @@ let radius = 25; // radius of the ball
 let color = "blue"; // color of the ball
 
 // Draw the ball on the canvas
-ctx.beginPath();
-ctx.arc(x, y, radius, 0, Math.PI * 2);
-ctx.fillStyle = color;
-ctx.fill();
+ctx?.beginPath();
+ctx?.arc(x, y, radius, 0, Math.PI * 2);
+ctx?.fill();
 
 // Move the ball across the screen
 
-function animate() {
+function animate(): void {
   requestAnimationFrame(animate);
 
-  ctx.clearRect(0, 0, innerWidth, innerHeight);
+  ctx?.clearRect(0, 0, innerWidth, innerHeight);
 
-  ctx.beginPath();
+  ctx?.beginPath();
 
-  ctx.arc(x, y, radius, 0, Math.PI * 2);
+  ctx?.arc(x, y, radius, 0, Math.PI * 2);
 
-  ctx.fillStyle = color;
-
-  ctx.fill();
+  ctx?.fill();
 
   x += 5;
 
