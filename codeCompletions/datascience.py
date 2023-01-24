@@ -17,7 +17,7 @@ for i in range(100):
 print(fullNames)
 
 # Path: codeCompletions\random.py
-"""
+"""p
 1. Create a list of 100 random numbers between 1 and 100
 2. Print the list
 3. Print the average of the list
