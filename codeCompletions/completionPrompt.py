@@ -14,3 +14,5 @@ response = openai.Completion.create(
     stop=["\"\"\""]
 )
 
+print (response)
+
